@@ -123,7 +123,7 @@ else:
 
 # Parameters that should be modified by user
 args.exportFile         = os.path.join( args.cityscapesPath , "evaluationResults" , "resultInstanceLevelSemanticLabeling.json" )
-args.groundTruthSearch  = os.path.join( args.cityscapesPath , "gtFine" , "val" , "*", "*_gtFine_instanceIds.png" )
+args.groundTruthSearch  = os.path.join( args.cityscapesPath , "val", "*_gtFine_labelIds.png" )
 
 # overlaps for evaluation
 args.overlaps           = np.arange(0.5,1.,0.05)
