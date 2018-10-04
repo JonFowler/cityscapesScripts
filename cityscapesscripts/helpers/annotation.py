@@ -3,6 +3,8 @@
 # Classes to store, read, and write annotations
 #
 
+from __future__ import print_function
+
 import os
 import json
 from collections import namedtuple
@@ -235,5 +237,5 @@ if __name__ == "__main__":
     obj.polygon.append( Point( 1 , 1 ) )
     obj.polygon.append( Point( 0 , 1 ) )
 
-    print type(obj).__name__
+    print(type(obj).__name__)
     print(obj)
